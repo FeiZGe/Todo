@@ -8,8 +8,16 @@ export interface inputProps {
 }
 
 export interface formProps {
-    childern: ReactNode;
+    children: ReactNode;
     action: (formData: FormData) => void;
     className: string;
     onSubmit?: () => void;
+}
+
+export interface buttonProps {
+    type?: "button" | "submit" | "reset";
+    text: string | ReactNode;
+    onClick?: () => void;
+    actionButton?: boolean;
+    bgColor?: string;
 }
